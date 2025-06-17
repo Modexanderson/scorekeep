@@ -1,0 +1,108 @@
+plugins {
+    id "com.android.application"
+    // START: FlutterFire Configuration
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    // END: FlutterFire Configuration
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+// Load keystore properties
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+android {
+    namespace = "com.scorekeep.app"
+    compileSdk = 35
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        // FIXED: Use Java 1.8 for Flutter compatibility
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        // FIXED: Use JVM target 1.8
+        jvmTarget = '1.8'
+    }
+
+    defaultConfig {
+        applicationId = "com.scorekeep.app"
+        minSdk = 21
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0.0"
+        
+        multiDexEnabled = true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        release {
+            if (keystorePropertiesFile.exists()) {
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+                storePassword keystoreProperties['storePassword']
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            
+            debuggable = true
+            minifyEnabled = false
+            shrinkResources = false
+        }
+        
+        release {
+            minifyEnabled = true
+            shrinkResources = true
+            debuggable = false
+            
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            
+            // Only sign if keystore exists
+            if (keystorePropertiesFile.exists()) {
+                signingConfig = signingConfigs.release
+            }
+            
+            zipAlignEnabled = true
+            crunchPngs = true
+        }
+    }
+
+    buildFeatures {
+        viewBinding = false
+        dataBinding = false
+    }
+
+    // FIXED: Updated lint configuration
+    lint {
+        checkReleaseBuilds = true
+        abortOnError = false
+        disable 'InvalidPackage'
+    }
+
+    packagingOptions {
+        pickFirst '**/libc++_shared.so'
+        pickFirst '**/libjsc.so'
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // Add multidex support for complex apps
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "213317608636",
+    "project_id": "scorekeep-ffa31",
+    "storage_bucket": "scorekeep-ffa31.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213317608636:android:19d74baa52234b47dc9cb9",
+        "android_client_info": {
+          "package_name": "com.scorekeep.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE_9ZyDSNWeSwSEWC8irhn6G0r7fP500Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
