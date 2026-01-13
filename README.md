@@ -1,6 +1,9 @@
 score_keep
+
 THE ULTIMATE GAME SCORE TRACKER
+
 ScoreKeep
+
 ScoreKeep is a Flutter app for creating, managing, and tracking scores for your games. Works for cards, board games, party games - whatever you're playing. Keep score easily and check back on past sessions whenever you want.
 
 Features
