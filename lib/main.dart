@@ -1,3 +1,5 @@
+// lib/main.dart
+
 import 'package:firebase_analytics/firebase_analytics.dart'; // Fixed import
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
