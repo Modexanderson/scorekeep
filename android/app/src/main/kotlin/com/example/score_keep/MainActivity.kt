@@ -1,4 +1,4 @@
-package com.scorekeep.app
+package com.score.keep
 
 import io.flutter.embedding.android.FlutterActivity
 

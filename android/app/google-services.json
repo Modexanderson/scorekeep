@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:213317608636:android:19d74baa52234b47dc9cb9",
+        "mobilesdk_app_id": "1:213317608636:android:8b55ba428c781309dc9cb9",
         "android_client_info": {
-          "package_name": "com.scorekeep.app"
+          "package_name": "com.score.keep"
         }
       },
       "oauth_client": [],

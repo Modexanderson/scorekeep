@@ -14,7 +14,7 @@ dependencies:
   shared_preferences: ^2.5.3
   uuid: ^4.5.1
   flutter_native_splash: ^2.4.4
-  flutter_launcher_icons: ^0.14.3
+  flutter_launcher_icons: ^0.13.1
   upgrader: ^11.4.0
 
   firebase_core: ^2.24.2
@@ -36,7 +36,7 @@ flutter_icons:
   image_path: "assets/icons/icon.png"
 
   # ADAPTIVE ICON (Android 8.0+)
-  adaptive_icon_background: "assets/icons/adaptive_background.png"
+  adaptive_icon_background: "#FFFFFF"
   adaptive_icon_foreground: "assets/icons/adaptive_foreground.png"
 
   # Background color fallback (if not using background image)

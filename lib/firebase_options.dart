@@ -58,7 +58,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAE_9ZyDSNWeSwSEWC8irhn6G0r7fP500Y',
-    appId: '1:213317608636:android:19d74baa52234b47dc9cb9',
+    appId: '1:213317608636:android:8b55ba428c781309dc9cb9',
     messagingSenderId: '213317608636',
     projectId: 'scorekeep-ffa31',
     storageBucket: 'scorekeep-ffa31.firebasestorage.app',
@@ -66,10 +66,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAhEbOaNL-k66wKG_P722hFXFNhFqTRphc',
-    appId: '1:213317608636:ios:be70f9afc815b555dc9cb9',
+    appId: '1:213317608636:ios:d46f6a2b059bf2c4dc9cb9',
     messagingSenderId: '213317608636',
     projectId: 'scorekeep-ffa31',
     storageBucket: 'scorekeep-ffa31.firebasestorage.app',
-    iosBundleId: 'com.scorekeep.app',
+    iosBundleId: 'com.score.keep',
   );
+
 }

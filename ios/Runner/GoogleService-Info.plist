@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.scorekeep.app</string>
+	<string>com.score.keep</string>
 	<key>PROJECT_ID</key>
 	<string>scorekeep-ffa31</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:213317608636:ios:be70f9afc815b555dc9cb9</string>
+	<string>1:213317608636:ios:d46f6a2b059bf2c4dc9cb9</string>
 </dict>
 </plist>
