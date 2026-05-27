@@ -3,7 +3,7 @@
 import 'package:firebase_analytics/firebase_analytics.dart'; // Fixed import
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core/firebase_core.dart' as fb_core;
 import 'package:score_keep/firebase_options.dart';
 import 'package:upgrader/upgrader.dart';
 import 'pages/home_page.dart';
@@ -18,7 +18,7 @@ void main() async {
 
   // Initialize Firebase with better error handling
   try {
-    await Firebase.initializeApp(
+    await fb_core.Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
     print('Firebase initialized successfully');
@@ -220,7 +220,7 @@ class _ScoreKeepAppState extends State<ScoreKeepApp>
       debugShowCheckedModeBanner: false,
       navigatorObservers: [
         // Add Firebase Analytics observer with null check
-        if (Firebase.apps.isNotEmpty)
+        if (fb_core.Firebase.apps.isNotEmpty)
           FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance),
       ],
     );
