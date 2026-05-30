@@ -9,14 +9,14 @@ A Flutter app for creating, managing, and tracking scores for your games. Works 
 ## Screenshots
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Modexanderson/scorekeep/master/assets/images/1.png" width="250" />
-  <img src="https://raw.githubusercontent.com/Modexanderson/scorekeep/master/assets/images/2.png" width="250" />
-  <img src="https://raw.githubusercontent.com/Modexanderson/scorekeep/master/assets/images/3.png" width="250" />
+  <img src="https://raw.githubusercontent.com/Modexanderson/scorekeep/master/assets/screenshots/processed/1.png" width="250" />
+  <img src="https://raw.githubusercontent.com/Modexanderson/scorekeep/master/assets/screenshots/processed/2.png" width="250" />
+  <img src="https://raw.githubusercontent.com/Modexanderson/scorekeep/master/assets/screenshots/processed/3.png" width="250" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Modexanderson/scorekeep/master/assets/images/4.png" width="250" />
-  <img src="https://raw.githubusercontent.com/Modexanderson/scorekeep/master/assets/images/5.png" width="250" />
+  <img src="https://raw.githubusercontent.com/Modexanderson/scorekeep/master/assets/screenshots/processed/4.png" width="250" />
+  <img src="https://raw.githubusercontent.com/Modexanderson/scorekeep/master/assets/screenshots/processed/5.png" width="250" />
 </p>
 
 ---

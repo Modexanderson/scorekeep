@@ -9,9 +9,13 @@ import 'package:upgrader/upgrader.dart';
 import 'pages/home_page.dart';
 import 'services/storage_service.dart';
 import 'services/firebase_service.dart';
+import 'services/demo_data.dart';
 // import 'services/ad_service.dart';
 // import 'services/purchase_service.dart';
 import 'theme/app_theme.dart';
+
+// Set to true to seed demo data for App Store screenshots, then set back to false.
+const bool kSeedDemoData = false;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -83,6 +87,12 @@ Future<void> _initializeServices() async {
       await FirebaseService.logAppOpen();
     } catch (e) {
       print('Failed to log app open: $e');
+    }
+
+    // Seed demo data for screenshots if flag is set
+    if (kSeedDemoData) {
+      await DemoData.seed();
+      print('Demo data seeded for screenshots');
     }
 
     print('All services initialized successfully');
